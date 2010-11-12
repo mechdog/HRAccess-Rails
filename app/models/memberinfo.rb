@@ -6,10 +6,10 @@ class Memberinfo < ActiveRecord::Base
   
   def link_to_member(member_object)
       self.snmember=member_object.id
-      self.increment_memberinfono
+      self.increment
   end
    
-  def increment_memberinfono
+  def increment
     self.member.memberinfono = self.member.memberinfono ? self.member.memberinfono+1 : 1
     self.memberinfono = self.member.memberinfono
 
