@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  snmember: 1
+  namefirst: MyString
+  namelast: MyString
+  dob: 2010-11-10
+  memberinfono: 1
+
+two:
+  snmember: 1
+  namefirst: MyString
+  namelast: MyString
+  dob: 2010-11-10
+  memberinfono: 1
