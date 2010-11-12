@@ -18,5 +18,9 @@ class Memberinfo < ActiveRecord::Base
 
   end
   
+  def == (object)
+      self.namefirst == object.namefirst ? true : false
+  end
+  
   
 end

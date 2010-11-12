@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Namefirst:</b>
+  <%= @memberinfo.namefirst %>
+</p>
+
+<p>
+  <b>Namelast:</b>
+  <%= @memberinfo.namelast %>
+</p>
+
+<p>
+  <b>Memberinfono:</b>
+  <%= @memberinfo.memberinfono %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @memberinfo.dob %>
+</p>
+
+<p>
+  <b>Snmember:</b>
+  <%= @memberinfo.snmember %>
+</p>
+
+
+<%= link_to 'Edit', edit_memberinfo_path(@memberinfo) %> |
+<%= link_to 'Back', memberinfos_path %>

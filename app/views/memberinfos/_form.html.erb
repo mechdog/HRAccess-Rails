@@ -1,0 +1,37 @@
+<%= form_for(@memberinfo) do |f| %>
+  <% if @memberinfo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@memberinfo.errors.count, "error") %> prohibited this memberinfo from being saved:</h2>
+
+      <ul>
+      <% @memberinfo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :namefirst %><br />
+    <%= f.text_field :namefirst %>
+  </div>
+  <div class="field">
+    <%= f.label :namelast %><br />
+    <%= f.text_field :namelast %>
+  </div>
+  <div class="field">
+    <%= f.label :memberinfono %><br />
+    <%= f.text_field :memberinfono %>
+  </div>
+  <div class="field">
+    <%= f.label :dob %><br />
+    <%= f.date_select :dob, :start_year => 1910 %>
+  </div>
+  <div class="field">
+    <%= f.label :snmember %><br />
+    <%= f.text_field :snmember %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
